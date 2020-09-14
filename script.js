@@ -14,6 +14,24 @@
 
 // document.write(answers);
 
-const user = 'Ivan';
+// const user = 'Ivan';
 
-console.log(`ПРивет ${user}`);
+// console.log(`ПРивет ${user}`);
+
+const numberOfFilms = prompt('Сколько фильмов вы уже смотрели?', '');
+
+const personalMovieDB = {
+    count: numberOfFilms,
+    movies: {},
+    actors: {},
+    genres: [],
+    privat: false
+};
+
+const lastFilm = prompt('Один из просмотренных последних фильмов?', '');
+const valueFilm = prompt('На сколько оцените его?', '');
+
+personalMovieDB.movies[lastFilm] = valueFilm;
+
+
+console.log(personalMovieDB);
